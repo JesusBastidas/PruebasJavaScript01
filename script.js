@@ -58,6 +58,20 @@ let edad = '35';
 console.log('Hola '+ 'me llamo'+nombre+' '+apellido+". Tengo "+edad);
 console.log(`Hola me llamo ${nombre} ${apellido}. Tengo ${edad}.`);
 
+/* OBJETO MATH*/
 
+console.log(Math.E);/*Constante de E*/
+console.log(Math.PI);/*Constante de PI*/
 
+let num = -5;
+let num2 = 5.3;
 
+console.log(Math.abs(num));/* devuelve el valor absoluto del numero que se le asigna a la variable */
+console.log(Math.ceil(num2));/* devuelve el valor redondeado hacia arriba del numero que se asigna a la variable*/
+console.log(Math.floor(num2));/* devuelve el valor redondearo hacia abajo del numero que se asigna a la variable*/
+console.log(Math.pow(2,3));/* devuelve la operacion de potencia del primer valor de un numero, en donde el primer valor representa la base y el segundo la potencia*/
+console.log(Math.random());/* genera un numero aleatorio */
+console.log(Math.round(Math.random()*100));
+console.log(Math.round(Math.random()*(100-50)+50));
+console.log(Math.sign(0)); /* Retorna informacion sobre si un numero es positivo o negativo al incluirlo en como parametro en la funcion*/
+console.log(Math.sqrt(27));/* retorna la raiz cuadrada del numero que se le coloca a la funcion*/
