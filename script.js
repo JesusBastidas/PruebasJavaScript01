@@ -63,8 +63,8 @@ console.log(`Hola me llamo ${nombre} ${apellido}. Tengo ${edad}.`);
 console.log(Math.E);/*Constante de E*/
 console.log(Math.PI);/*Constante de PI*/
 
-let num = -5;
-let num2 = 5.3;
+let num = 5;
+let num2 = -2;
 
 console.log(Math.abs(num));/* devuelve el valor absoluto del numero que se le asigna a la variable */
 console.log(Math.ceil(num2));/* devuelve el valor redondeado hacia arriba del numero que se asigna a la variable*/
@@ -75,3 +75,85 @@ console.log(Math.round(Math.random()*100));
 console.log(Math.round(Math.random()*(100-50)+50));
 console.log(Math.sign(0)); /* Retorna informacion sobre si un numero es positivo o negativo al incluirlo en como parametro en la funcion*/
 console.log(Math.sqrt(27));/* retorna la raiz cuadrada del numero que se le coloca a la funcion*/
+
+/*SENTENCIA IF - ELSE */
+
+let num3 = 10
+
+if(num3>0) console.log(`${num3} es mayor que 0`);
+
+if(num3>0){
+    console.log(`${num3} es mayor que 0`);
+}else{
+    console.log(`${num3} es menor que 0`);
+}
+
+let num4 = 0
+
+if(num4>0){
+    
+    console.log(`${num4} es mayor a 0`);
+
+} else if(num3<0){
+
+    console.log(`${num4} es menor a 0`);
+
+}else{
+
+    console.log(`${num4} es igual a 0`);
+
+}
+
+/* dos operadores logicos a tener en cuenta &&=and,|| = o*/
+
+if (num>0){
+    if(num2>0){
+        console.log(`${num} y ${num2} son mayores que 0`);
+
+    }else if (num2<0){
+        console.log(`${num} es mayor a 0 y ${num2} es menor que 0`);
+    }else {
+        console.log(`${num} es mayor que 0 y ${num2} es igual a 0`);
+
+    }
+}else if (num<0){
+    if (num2>0){
+        console.log(`${num} es menor que 0 y ${num2} es mayor que 0`);
+
+    } else if (num2<0){
+        console.log(`${num} y ${num2} son menores que 0`);
+
+    }else {
+        console.log(`${num} es menor que 0 y ${num2} es igual a 0`);
+    }
+}else {
+    if (num2>0){
+        console.log(`${num} es igual a 0 y ${num2} es mayor que 0`);
+    } else if (num2<0){
+        console.log(`${num} es igual a 0 y ${num2} es menor que 0`);
+
+    }else {
+        console.log(`${num} y ${num2} son iguales a 0`);
+    }
+}
+
+/* EJEMPLO: ORDENAR TRES NUMERO DE MAYOR A MENOR */
+
+let x = 10;
+let y = 4;
+let z = 6;
+
+if (x>y){
+    if(x>z){
+        console.log(`${x}`);
+    }else {
+        console.log(`${z}`);
+    }
+    
+}else {
+    if(x>z){
+        console.log(`${y}`);
+    } else if (z>y){
+        console.log(`${z}`);
+    }
+}
