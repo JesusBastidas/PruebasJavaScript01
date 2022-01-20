@@ -157,3 +157,12 @@ if (x>y){
         console.log(`${z}`);
     }
 }
+
+const numbers = document.getElementById('numbers');
+const result = document.getElementById('result');
+
+let d = prompt('Introduzca el primer numero');
+let e = prompt('Introduzca el segundo numero');
+let f = prompt('Introduzca el tercer numero');
+
+numbers.textContent = `Los numeros son: ${d}, ${e}, ${f}`;
