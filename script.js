@@ -139,7 +139,7 @@ if (num>0){
 
 /* EJEMPLO: ORDENAR TRES NUMERO DE MAYOR A MENOR */
 
-let x = 10;
+/*let x = 10;
 let y = 4;
 let z = 6;
 
@@ -157,12 +157,66 @@ if (x>y){
         console.log(`${z}`);
     }
 }
+*/
 
-const numbers = document.getElementById('numbers');
+/*const numbers = document.getElementById('numbers');
 const result = document.getElementById('result');
 
-let d = prompt('Introduzca el primer numero');
-let e = prompt('Introduzca el segundo numero');
-let f = prompt('Introduzca el tercer numero');
+let x = prompt('Introduzca el primer numero');
+let y = prompt('Introduzca el segundo numero');
+let z = prompt('Introduzca el tercer numero');
 
-numbers.textContent = `Los numeros son: ${d}, ${e}, ${f}`;
+numbers.textContent = `Los numeros son: ${x}, ${y}, ${z}`;
+
+if (x>=y && x>=z){
+    if (y>z){
+        result.textContent = `El orden seria: ${x}, ${y}, ${z}`
+    }else {
+        result.textContent = `El orden seria: ${x}, ${z}, ${y}`
+    }
+}else if (y>=x && y>=z){
+    if (x>z){
+        result.textContent = `El orden seria ${y}, ${x}, ${z}`
+    }else {
+        result.textContent = `El orden seria ${y}, ${z}, ${x}`
+    }
+}else if (z>=x && z>=y){
+    if (x>y){
+        result.textContent = `El orden seria ${z}, ${x}, ${y}`
+    }else {
+        result.textContent = `El orden seria ${z}, ${y}, ${x}`
+    }
+}
+
+*/
+
+/* CONDICIONALES CON SWITCH */
+
+/* Sintaxis simple */
+
+let number = 2;
+
+switch(number){
+    case 1: console.log('El numero tiene el valor de 1'); /* Se coloca la primera comprobacion */
+    break;
+    case 2: console.log('El numero tiene el valor de 2'); /* Esta es la segunda comprobacion, y se colocan cuantas sean necesarias para verificar el dato que estamos buscando*/
+    break;      
+    case 3: console.log('El numero podria ser un 3');
+    break;                                                /* en esta sintaxis se coloca el break despues de cada condicion*/
+    default: console.log('El numero no es 1 o 2');        /* El default se usa para ordenar la accion quie debe tomar en caso de que no se cumpla ni la primera ni la segunda condicion*/
+}
+
+/* Sintaxis multiple */
+
+switch(number){
+    case 1:
+    case 3:
+    case 5:
+    console.log(`${number} es impar`);
+    break;
+    case 2:
+    case 4:
+    case 6:
+    console.log(`${number} es par`);
+    break;
+}
